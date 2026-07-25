@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <title>유흥플러스</title>
+</head>
+<style>
+  :root {
+    --bg-primary: #0a0a0f;
+    --border-color: #2d9eb5 !important;
+    --color-primary: #24c7ff !important
+  }
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+  body {
+    background: var(--bg-primary);
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(10, 10, 15, 0.98) 0%, rgba(18, 18, 26, 0.95) 100%) !important;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding: 20px 0;
+  }
+  header div:nth-of-type(1) {
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  header div:nth-of-type(2) {
+    padding-right: 20px;
+  }
+  header .title {
+    color: var(--color-primary);
+    font-weight: 900 !important;
+    font-size: 20px !important;
+    letter-spacing: 6px;
+  }
+  header .action-box {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+  header .action-box .logout {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    border: 0;
+    font-size: 14px;
+    color: white;
+    background: #0a0a0f;
+  }
+  header .action-box .logout i {
+    font-size: 20px;
+  }
+  main {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+  }
+  main section input {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+    width: 100%;
+  }
+  main section.input-element {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  main section.input-element .input-title {
+    display: flex;
+    padding-bottom: 5px;
+  }
+  main section.input-element .input-title .sub {
+    color: #9b9b9b;
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  main section.input-element button {
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  main .back {
+    display: flex;
+  }
+  main .back div {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 40px;
+    color: var(--color-primary);
+    cursor: pointer;
+  }
+  main .back div i {
+    font-size: 25px;
+  }
+  .h-70px {
+    height: 70px;
+  }
+  .inquiry-btn {
+    border-radius: 999px;
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+  }
+  .inquiry-btn img {
+    border-radius: 999px;
+    width: 50px;
+    height: 50px;
+  }
+</style>
+<body>
+  <header>
+    <div class="title">유흥플러스</div>
+    <div class="action-box">
+      <div>
+        <button class="logout"><i class="ti ti-logout"></i>로그아웃</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="h-70px"></div>
+    <div class="back">
+      <div>
+        <i class="ti ti-chevron-left"></i> 뒤로가기
+      </div>
+    </div>
+    <section class="input-element">
+      <div>
+        <div class="input-title">이미지 URL</div>
+        <input type="text" placeholder="EX) https://www.image.com">
+      </div>
+      <div>
+        <div class="input-title">웹사이트 링크</div>
+        <input type="text" placeholder="EX) https://www.유흥플러스.com">
+      </div>
+      <div>
+        <div class="input-title">연락처</div>
+        <input type="text" placeholder="EX) 010-1234-5678">
+      </div>
+      <div>
+        <div class="input-title">담당자</div>
+        <input type="text" placeholder="EX) 강실장">
+      </div>
+      <div>
+        <div class="input-title"><span><span>지역</span><span class="sub">※ 쉼표로 입력하면 제목 생성 시 하나가 랜덤으로 선택됩니다.</span></span></div>
+        <input type="text" placeholder="EX) 야탑, 모란, 분당">
+      </div>
+      <div>
+        <div class="input-title"><span><span>업종</span><span class="sub">※ 쉼표로 입력하면 제목 생성 시 하나가 랜덤으로 선택됩니다.</span></span></div>
+        <input type="text" placeholder="EX) 노래방, 셔츠룸, 룸싸롱, 가라오케">
+      </div>
+      <div>
+        <button>수정하기</button>
+      </div>
+    </section>
+  </main>
+  <div class="inquiry-btn">
+    <img src="file:///C:/Users/user/Desktop/작업폴더/노래방/현진이형이랑작업/assets/img/telegram_logo.png" alt="">
+  </div>
+</body>
+<script>
+ 
+</script>
+</html>
