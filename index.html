@@ -1,1 +1,159 @@
-123123123
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유흥플러스</title>
+</head>
+<style>
+  :root {
+    --bg-primary: #0a0a0f;
+    --border-color: #2d9eb5 !important;
+    --color-primary: #24c7ff !important
+  }
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+  body {
+    background: var(--bg-primary);
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: linear-gradient(180deg, rgba(10, 10, 15, 0.98) 0%, rgba(18, 18, 26, 0.95) 100%) !important;
+    backdrop-filter: blur(20px);
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    border-bottom: 1px solid var(--border-color) !important;
+  }
+  header .title {
+    color: var(--color-primary);
+    font-weight: 900 !important;
+    font-size: 30px !important;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px rgba(0, 179, 255, 0.3), 0 0 12px rgba(0, 179, 255, 0.3), 0 0 24px rgba(0, 179, 255, 0.3);
+  }
+  header .sub-title {
+    color: #9b9b9b;
+    letter-spacing: 2px;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  main section {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+  }
+  main section .title {
+    color: var(--color-primary);
+    font-weight: 900 !important;
+    font-size: 30px !important;
+    letter-spacing: 6px;
+  }
+  main section .action-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+  }
+  main section .action-box input {
+    padding: 20px;  
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+  }
+  main section .action-box .inquiry-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 20px 0;
+    width: 100%;
+  }
+  main section .action-box .inquiry-box div {
+    flex:1;
+    height:2px;
+    background: var(--border-color) !important
+  }
+  main section .action-box button:nth-of-type(1) {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+  }
+  main section .action-box button:nth-of-type(2) {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(10, 10, 15, 0.98) 0%, rgba(18, 18, 26, 0.95) 100%) !important;
+    color: white;
+    border: 1px solid var(--border-color);
+  }
+  .inquiry-btn {
+    border-radius: 999px;
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+  }
+  .inquiry-btn img {
+    border-radius: 999px;
+    width: 50px;
+    height: 50px;
+  }
+</style>
+<body>
+  <header>
+    <div class="title">유흥 전문 광고 플랫폼</div>
+    <div class="sub-title">유흥 업계에 최적화된 광고 서비스</div>
+  </header>
+  <main>
+    <section>
+      <div class="title">유흥플러스</div>
+      <div class="action-box">
+        <input type="text" placeholder="아이디를 입력하세요">
+        <input type="text" placeholder="비밀번호를 입력하세요">
+        <button>로그인</button>
+        <div class="inquiry-box">
+            <div></div>
+            <span>문의하기</span>
+            <div></div>
+        </div>
+        <button>텔레그램 문의하기</button>
+      </div>
+    </section>
+  </main>
+  <div class="inquiry-btn">
+    <img src="file:///C:/Users/user/Desktop/작업폴더/노래방/현진이형이랑작업/assets/img/telegram_logo.png" alt="">
+  </div>
+</body>
+<script>
+ 
+</script>
+</html>
